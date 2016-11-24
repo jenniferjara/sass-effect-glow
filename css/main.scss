@@ -8,8 +8,14 @@
 	padding: 0px;
 	position: relative;
 }
+body{
+	background: url(../img/fondo.jpg) no-repeat;
+    background-size: cover;
+	height: 100%;
+    width: 100%;
+}
 .container {
-	background: white;
+	background: transparent;
 
 	.esfera {
 		background:$color-esfera;
