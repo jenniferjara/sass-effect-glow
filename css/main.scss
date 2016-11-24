@@ -1,0 +1,56 @@
+@import "_variable";
+@import "_mixins";
+@import "_esfera";
+
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+.container {
+	background: white;
+
+	.esfera {
+		background:$color-esfera;
+		border-radius: 50px;
+		width: 100px;
+		height: 100px;
+		margin: 2%;
+	}
+	.estrella-1{
+		@include posicion(0px, 150px);
+		@include star-center;
+		@include star;	
+	}
+	.estrella-2{
+		@include posicion(90px, 100px);
+		@include star-center(35px, 15px);
+		@include star(17px);
+	}
+	.estrella-3{
+		@include posicion(180px, 150px);
+		@include star-center(25px, 15px);
+		@include star(13px);
+	}
+	.estrella-4{
+		@include posicion(180px, 260px);
+		@include star-center(22px, 15px);
+		@include star(13px);
+	}
+	.estrella-5{
+		@include posicion(140px, 360px);
+		@include star-center(28px, 20px);
+		@include star(10px);
+	}
+	.estrella-6{
+		@include posicion(30px, 380px);
+		@include star-center(28px, 12px);
+		@include star(10px);
+	}
+	.estrella-7{
+		@include posicion(0px, 270px);
+		@include star-center(25px, 10px);
+		@include star(10px);
+	}
+}
