@@ -21,7 +21,8 @@
 	.estrella-1{
 		@include posicion(0px, 150px);
 		@include star-center;
-		@include star;	
+		@include star;
+		@include glow(20px);	
 	}
 	.estrella-2{
 		@include posicion(90px, 100px);

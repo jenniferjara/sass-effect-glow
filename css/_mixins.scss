@@ -10,3 +10,7 @@
 	top: $top;
 	left: $left;
 }
+@mixin glow($radius){
+	box-shadow: 0 0 $radius $color-estrella;
+	animation: glow 5s ease-in-out infinite;
+}

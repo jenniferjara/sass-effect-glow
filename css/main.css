@@ -21,7 +21,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 25px 15px; }
+    padding: 25px 15px;
+    box-shadow: 0 0 20px #ff0000;
+    animation: glow 5s ease-in-out infinite; }
     .container .estrella-1 .star-five {
       margin: 15px 0;
       position: relative;
