@@ -9,7 +9,7 @@
 	position: relative;
 }
 body{
-	background: url(../img/fondo.jpg) no-repeat;
+	background: url(../img/fondo.png) no-repeat;
     background-size: cover;
 	background-size: cover;
 	background-attachment: fixed;
@@ -28,8 +28,7 @@ body{
 	.estrella-1{
 		@include posicion(25px, 32%);
 		@include star-center;
-		@include star;
-		@include glow(20px);	
+		@include star;	
 	}
 	.estrella-2{
 		@include posicion(140px, 30%);

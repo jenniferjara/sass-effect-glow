@@ -1,16 +1,28 @@
 @mixin star-center($padding-side: 25px, $padding-top: 15px){
+	@-webkit-keyframes pulse {
+	  0% {-webkit-box-shadow: 0 0 0 0 rgba($brillo-esfera, 0.9);}
+	  70% {-webkit-box-shadow: 0 0 0 10px rgba($brillo-esfera, 0.4);}
+	  100% {-webkit-box-shadow: 0 0 0 0 rgba($brillo-esfera, 0.1);}
+	}
+	@keyframes pulse {
+	  0% {	-moz-box-shadow: 0 0 0 0 rgba($brillo-esfera, 0.9);
+	    	box-shadow: 0 0 0 0 rgba($brillo-esfera, 0.9);}
+	  70% {	-moz-box-shadow: 0 0 0 10px rgba($brillo-esfera, 0.4);
+	      	box-shadow: 0 0 0 10px rgba($brillo-esfera, 0.4);}
+	  100% {-moz-box-shadow: 0 0 0 0 rgba($brillo-esfera, 0.1);
+	      	box-shadow: 0 0 0 0 rgba($brillo-esfera, 0.1);}
+	}
+
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	padding: $padding-side $padding-top;
-
+	box-shadow: 0 0 0 rgba($brillo-esfera, 0.9);
+  	animation: pulse 2s infinite;
 }
+
 @mixin posicion($top, $left){
 	position: absolute;
 	top: $top;
 	left: $left;
-}
-@mixin glow($radius){
-	box-shadow: 0 0 $radius $color-estrella;
-	animation: glow 2s ease-in-out infinite;
 }
